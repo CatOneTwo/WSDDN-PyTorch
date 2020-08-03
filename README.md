@@ -114,7 +114,7 @@ On trainval (corloc)
 ```
 On test (detection mAP)
 ```shell
-python3 code/tasks/test.py --cfg configs/baselines/vgg16_voc2007.yaml  --dataset voc2007test --model oicr_lambda_log_distillation --load_ckpt snapshots/midn/<some-running-date-time>/ckpt/model_step24999.pth
+python3 code/tasks/test.py --cfg configs/baselines/vgg16_voc2007.yaml  --dataset voc2007test --model midn --load_ckpt snapshots/midn/<some-running-date-time>/ckpt/model_step24999.pth
 ```
 To **Visualize** the detection results
 
