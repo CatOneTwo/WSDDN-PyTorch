@@ -11,7 +11,7 @@ Implementation differences: Spatial regulariser isn't added
 2. [Requirements: hardware](#requirements-hardware)
 3. [Basic installation](#basic-installation)
 4. [Installation for training and testing](#installation-for-training-and-testing)
-5. [Extra Downloads (Models trained on PASCAL VOC)](#extra-downloads-selective-search)
+5. [Extra Downloads (selective search)](#extra-downloads-selective-search)
 6. [Extra Downloads (ImageNet models)](dxtra-downloads-imageNet-models)
 7. [Usage](#usage)
 
