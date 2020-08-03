@@ -4,7 +4,7 @@ This repository contains the PyTorch implementation of paper [`Weakly Supervised
 Implementation differences: Spatial regulariser isn't added
 
 ## Architecture
-![WSSSN](https://raw.githubusercontent.com/CatOneTwo/Picbed_PicGo/master/img/WSDDN.png)
+![WSDDN](https://raw.githubusercontent.com/CatOneTwo/Picbed_PicGo/master/img/WSDDN.png)
 
 ## Contents
 1. [Requirements: software](#requirements-software)
