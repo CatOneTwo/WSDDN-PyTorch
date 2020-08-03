@@ -33,7 +33,7 @@ You can also install these packages by yourself.
 ## Basic installation
 Clone this repository
 ```shell
-git clone https://github.com/CatOneTwo/WSDDN-PyTorch && cd WSDDN
+git clone https://github.com/CatOneTwo/WSDDN-PyTorch
 ```
 ## Installation for training and testing
 1. Create a "data" folder in  $WSDDN_ROOT and enter in this folder
@@ -108,17 +108,17 @@ git clone https://github.com/CatOneTwo/WSDDN-PyTorch && cd WSDDN
 ## Note
 Below is the code structure
 
-- code
-    - datasets: VOC dataset file
-    - layers: layer and loss files
-    - models: WSDDN model based on layers
-    - tasks: train, test and visualize files
-    - utils: files used for other directories
-- configs
-    - baselines: config files for model and dataset
-- data
-    - pretrained_model: VGG16 model weights
-    - selective_search_data: selective search for VOC data
-    - VOCdevikit: VOC dataset
+- **code**
+    - **datasets**: VOC dataset file
+    - **layers**: layer and loss files
+    - **models**: WSDDN model based on layers
+    - **tasks**: train, test and visualize files
+    - **utils**: files used for other directories
+- **configs**
+    - **baselines**: config files for model and dataset
+- **data**
+    - **pretrained_model**: VGG16 model weights
+    - **selective_search_data**: selective search for VOC data
+    - **VOCdevikit**: VOC dataset
 
 All code files are in `code` directory. If you want to design a model based on WSDDN, you can modify `layers` and `model`.
