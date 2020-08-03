@@ -57,11 +57,6 @@ Clone this repository
     ```
 2. Download the training, validation, test data, and VOCdevkit
     ```Shell
-    wget http://host.robots.ox.ac.uk/pascal/VOC/voc2007/VOCtrainval_06-Nov-2007.tar
-    wget http://host.robots.ox.ac.uk/pascal/VOC/voc2007/VOCtest_06-Nov-2007.tar
-    ```
-    Optional, normally faster to download, links to VOC (from darknet):
-    ```Shell
     wget https://pjreddie.com/media/files/VOCtrainval_06-Nov-2007.tar
     wget https://pjreddie.com/media/files/VOCtest_06-Nov-2007.tar
     ```
@@ -70,17 +65,14 @@ Clone this repository
     tar xvf VOCtrainval_06-Nov-2007.tar
     tar xvf VOCtest_06-Nov-2007.tar
     ```
-
 4. Download the VOCdevkit evaluation code adapted to octave
     ```Shell
     wget http://inf.ufrgs.br/~lfazeni/CVPR_deepvision2020/VOCeval_octave.tar
     ```
-
 5. Extract VOCeval_octave
     ```Shell
     tar xvf VOCeval_octave.tar
     ```
-
 6. Download pascal annotations in the COCO format
     ```Shell
     wget http://inf.ufrgs.br/~lfazeni/CVPR_deepvision2020/coco_annotations_VOC.tar
@@ -89,7 +81,6 @@ Clone this repository
     ```Shell
     tar xvf coco_annotations_VOC.tar
     ```
-
 8. It should have this basic structure
     ```Shell
     $VOC2007/                           
@@ -101,11 +92,6 @@ Clone this repository
 9. [Optional] download and extract PASCAL VOC 2012.
     ```Shell
     wget http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar
-    tar xvf VOCtrainval_11-May-2012.tar
-    ```
-    or
-    ```Shell
-    wget https://pjreddie.com/media/files/VOCtrainval_11-May-2012.tar
     tar xvf VOCtrainval_11-May-2012.tar
     ```
     **Observation:** The  `2012 test set` is only available in the [PASCAL VOC Evaluation Server](http://host.robots.ox.ac.uk:8080/) to download. You must create a user and download it by yourself. After downloading, you can extract it in the data folder.
