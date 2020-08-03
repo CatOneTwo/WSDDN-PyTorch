@@ -17,7 +17,7 @@ Implementation differences: Spatial regulariser isn't added
 
 
 ## Requirements: software
-python3 packages and versions used (listed using freeze frin pip) are in requirements.txt.
+Python3 packages and versions used (listed using freeze frin pip) are in requirements.txt.
 
 You can create a new virtual environment and then install thses packages from requirements.txt.
 ```shell
@@ -100,3 +100,8 @@ Clone this repository
     tar xvf pretrained_model.tar
     ```
 ## Usage
+
+---
+
+## Note
+
