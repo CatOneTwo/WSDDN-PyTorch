@@ -116,9 +116,9 @@ On test (detection mAP)
 ```shell
 python3 code/tasks/test.py --cfg configs/baselines/vgg16_voc2007.yaml  --dataset voc2007test --model midn --load_ckpt snapshots/midn/<some-running-date-time>/ckpt/model_step24999.pth
 ```
-To **Visualize** the detection results
+To **Visualize** the detection results:
 
-After evaluating WSDDN on test dataset, you will get `detections.pkl`.  Then you can run the visualization script to show the results in a openCV window.
+After evaluating WSDDN on test dataset, you will get `detections.pkl`. Then you can run the visualization script to show the results in a openCV window.
 ```shell
 python3 code/tasks/visualize.py --cfg configs/baselines/vgg16_voc2007.yaml --dataset voc2007test --detections snapshots/midn/<some-running-date-time>/test/final/detections.pkl 
 ```
@@ -148,6 +148,6 @@ Below is the code structure
     - **VOCdevikit**: VOC dataset
 
 All code files are in `code` directory. If you want to design a model based on WSDDN, you can modify `layers` and `model`.
-## Reference
+## References
 - [Boosted-OICR](https://github.com/luiszeni/Boosted-OICR)
 - [OICR](https://github.com/ppengtang/oicr)
