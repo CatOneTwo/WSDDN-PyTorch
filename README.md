@@ -102,6 +102,31 @@ git clone https://github.com/CatOneTwo/WSDDN-PyTorch
     tar xvf pretrained_model.tar
     ```
 ## Usage
+To **Train** the WSDDN network on VOC 2007 trainval set:
+```shell
+python3 code/tasks/train.py --cfg configs/baselines/vgg16_voc2007.yaml --model midn
+```
+To **Evaluate** the WSDDN network on VOC 2007:
+
+On trainval (corloc)
+```shell
+ python3 code/tasks/test.py --cfg configs/baselines/vgg16_voc2007.yaml --dataset voc2007trainval --model midn --load_ckpt snapshots/midn/<some-running-date-time>/ckpt/model_step24999.pth
+```
+On test (detection mAP)
+```shell
+python3 code/tasks/test.py --cfg configs/baselines/vgg16_voc2007.yaml  --dataset voc2007test --model oicr_lambda_log_distillation --load_ckpt snapshots/midn/<some-running-date-time>/ckpt/model_step24999.pth
+```
+To **Visualize** the detection results
+
+After evaluating WSDDN on test dataset, you will get `detections.pkl`.  Then you can run the visualization script to show the results in a openCV window.
+···shell
+python3 code/tasks/visualize.py --cfg configs/baselines/vgg16_voc2007.yaml --dataset voc2007test --detections snapshots/midn/<some-running-date-time>/test/final/detections.pkl 
+```
+You can also save the visualizations as images. First create a folder to save the outputs and pass it with the --output argument
+```shell
+mkdir output    
+python3 code/tasks/visualize.py --cfg configs/baselines/vgg16_voc2007.yaml --dataset voc2007test --detections snapshots/midn/<some-running-date-time>/test/final/detections.pkl --output output 
+```
 
 ---
 
@@ -122,3 +147,6 @@ Below is the code structure
     - **VOCdevikit**: VOC dataset
 
 All code files are in `code` directory. If you want to design a model based on WSDDN, you can modify `layers` and `model`.
+## Reference
+- [Boosted-OICR](https://github.com/luiszeni/Boosted-OICR)
+- [OICR](https://github.com/ppengtang/oicr)
