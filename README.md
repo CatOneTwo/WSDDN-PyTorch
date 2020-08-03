@@ -21,6 +21,7 @@ Python3 packages and versions used (listed using freeze frin pip) are in require
 
 You can create a new virtual environment and then install thses packages from requirements.txt.
 ```shell
+conda create -n env_name python=3.6
 pip install -r $WSDDN_ROOT/requirements.txt
 ```
 You can also install these packages by yourself.
@@ -32,6 +33,7 @@ You can also install these packages by yourself.
 ## Basic installation
 Clone this repository
 ```shell
+git clone https://github.com/CatOneTwo/WSDDN-PyTorch && cd WSDDN
 ```
 ## Installation for training and testing
 1. Create a "data" folder in  $WSDDN_ROOT and enter in this folder
@@ -104,4 +106,19 @@ Clone this repository
 ---
 
 ## Note
+Below is the code structure
 
+- code
+    - datasets: VOC dataset file
+    - layers: layer and loss files
+    - models: WSDDN model based on layers
+    - tasks: train, test and visualize files
+    - utils: files used for other directories
+- configs
+    - baselines: config files for model and dataset
+- data
+    - pretrained_model: VGG16 model weights
+    - selective_search_data: selective search for VOC data
+    - VOCdevikit: VOC dataset
+
+All code files are in `code` directory. If you want to design a model based on WSDDN, you can modify `layers` and `model`.
