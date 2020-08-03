@@ -17,28 +17,13 @@ Implementation differences: Spatial regulariser isn't added
 
 
 ## Requirements: software
-- python3 packages and versions used (listed using freeze frin pip):
-    - cycler==0.10.0
-    - Cython==0.29.16
-    - joblib==0.14.1
-    - kiwisolver==1.2.0
-    - matplotlib==3.2.1
-    - numpy==1.18.2
-    - opencv-python==4.2.0.34
-    - packaging==20.3
-    - Pillow==6.1.0
-    - protobuf==3.11.3
-    - pycocotools==2.0.0 (available from pip)
-    - pyparsing==2.4.7
-    - python-dateutil==2.8.1
-    - PyYAML==5.3.1
-    - scikit-learn==0.22.2.post1
-    - scipy==1.4.1
-    - six==1.14.0
-    - sklearn==0.0
-    - tensorboardX==2.0
-    - torch==1.2.0+cu92
-    - torchvision==0.4.0+cu92
+python3 packages and versions used (listed using freeze frin pip) are in requirements.txt.
+
+You can create a new virtual environment and then install thses packages from requirements.txt.
+```shell
+pip install -r $WSDDN_ROOT/requirements.txt
+```
+You can also install these packages by yourself.
 ## Requirements: hardware
 - We used cuda 9.0 and cudnn 7.0
     - We used an Nvidia GeForce GTX with 10.9G of memory. But it shold be ok to train if you have a GPU with at least 8Gb.
