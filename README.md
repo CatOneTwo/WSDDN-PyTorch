@@ -6,7 +6,18 @@ Implementation differences: Spatial regulariser isn't added
 ## Architecture
 ![WSDDN](https://raw.githubusercontent.com/CatOneTwo/Picbed_PicGo/master/img/WSDDN.png)
 
+## Results
+
+|      | aero | bike | bird | boat | bottle | bus  | car  | cat  | chair | cow  | table | dog  | horse | mbike | person | plant | sheep | sofa | train | tv   | mAP  |
+| ---- | ---- | ---- | ---- | ---- | ------ | ---- | ---- | ---- | ----- | ---- | ----- | ---- | ----- | ----- | ------ | ----- | ----- | ---- | ----- | ---- | ---- |
+| Ap   |      |      |      |      |        |      |      |      |       |      |       |      |       |       |        |       |       |      |       |      |      |
+
+|        | aero | bike | bird | boat | bottle | bus  | car  | cat  | chair | cow  | table | dog  | horse | mbike | person | plant | sheep | sofa | train | tv   | mean |
+| ------ | ---- | ---- | ---- | ---- | ------ | ---- | ---- | ---- | ----- | ---- | ----- | ---- | ----- | ----- | ------ | ----- | ----- | ---- | ----- | ---- | ---- |
+| corLoc | 68.8 | 62.4 | 54.7 | 33.5 | 39.7   | 68.0 | 67.7 | 49.1 | 35.3  | 54.8 | 33.8  | 38.8 | 37.4  | 77.1  | 7.54   | 43.2  | 60.8  | 24.5 | 68.8  | 63.1 | 49.5 |
+
 ## Contents
+
 1. [Requirements: software](#requirements-software)
 2. [Requirements: hardware](#requirements-hardware)
 3. [Basic installation](#basic-installation)
