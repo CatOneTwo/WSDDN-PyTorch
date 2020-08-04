@@ -1,7 +1,8 @@
 # WSDDN PyTorch
-This repository contains the PyTorch implementation of paper [`Weakly Supervised Deep Detection Networks`](https://arxiv.org/abs/1511.02853) (CVPR 2016)
+**This repository contains the PyTorch implementation of paper [`Weakly Supervised Deep Detection Networks`](https://arxiv.org/abs/1511.02853) (CVPR 2016).**
 
-Implementation differences: Spatial regulariser isn't added
+- Implementation differences: Spatial regulariser isn't added
+- Related code: [OICR-PyTorch](https://github.com/CatOneTwo/OICR-PyTorch)
 
 ## Architecture
 ![WSDDN](https://raw.githubusercontent.com/CatOneTwo/Picbed_PicGo/master/img/WSDDN.png)
@@ -28,7 +29,7 @@ Implementation differences: Spatial regulariser isn't added
 
 
 ## Requirements: software
-Python3 packages and versions used (listed using freeze frin pip) are in requirements.txt.
+**Python3 packages** and versions used (listed using freeze frin pip) are in requirements.txt.
 
 You can create a new virtual environment and then install thses packages from requirements.txt.
 ```shell
@@ -44,7 +45,7 @@ sudo apt-get install octave
 ```
 
 ## Requirements: hardware
-- I used cuda 9.0 and cudnn 7.0 in Ubuntu 16.04
+- I used cuda 9.0 and cudnn 7.0 on Ubuntu 16.04
     - We used an Nvidia GeForce GTX with 10.9G of memory. But it shold be ok to train if you have a GPU with at least 8Gb.
     - **NOTICE**: different versions of Pytorch have different memory usages.
 
