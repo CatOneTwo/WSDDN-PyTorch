@@ -8,9 +8,9 @@ Implementation differences: Spatial regulariser isn't added
 
 ## Results
 
-|      | aero | bike | bird | boat | bottle | bus  | car  | cat  | chair | cow  | table | dog  | horse | mbike | person | plant | sheep | sofa | train | tv   | mAP  |
-| ---- | ---- | ---- | ---- | ---- | ------ | ---- | ---- | ---- | ----- | ---- | ----- | ---- | ----- | ----- | ------ | ----- | ----- | ---- | ----- | ---- | ---- |
-| Ap   |      |      |      |      |        |      |      |      |       |      |       |      |       |       |        |       |       |      |       |      |      |
+|        | aero | bike | bird | boat | bottle | bus  | car  | cat  | chair | cow  | table | dog  | horse | mbike | person | plant | sheep | sofa | train | tv   | mAP      |
+| ------ | ---- | ---- | ---- | ---- | ------ | ---- | ---- | ---- | ----- | ---- | ----- | ---- | ----- | ----- | ------ | ----- | ----- | ---- | ----- | ---- | -------- |
+| **Ap** | 41.4 | 44.2 | 25.8 | 12.2 | 10.9   | 56.3 | 39.0 | 27.8 | 7.0   | 25.5 | 16.6  | 24.4 | 18.0  | 51.5  | 1.1    | 11.2  | 17.9  | 10.6 | 48.0  | 42.2 | **26.6** |
 
 |            | aero | bike | bird | boat | bottle | bus  | car  | cat  | chair | cow  | table | dog  | horse | mbike | person | plant | sheep | sofa | train | tv   | mean     |
 | ---------- | ---- | ---- | ---- | ---- | ------ | ---- | ---- | ---- | ----- | ---- | ----- | ---- | ----- | ----- | ------ | ----- | ----- | ---- | ----- | ---- | -------- |
@@ -36,8 +36,15 @@ conda create -n env_name python=3.6
 pip install -r $WSDDN_ROOT/requirements.txt
 ```
 You can also install these packages by yourself.
+
+Besides, you should install **Octave**, which is mostly compatible with MATLAB.
+
+```shell
+sudo apt-get install octave
+```
+
 ## Requirements: hardware
-- We used cuda 9.0 and cudnn 7.0
+- I used cuda 9.0 and cudnn 7.0 in Ubuntu 16.04
     - We used an Nvidia GeForce GTX with 10.9G of memory. But it shold be ok to train if you have a GPU with at least 8Gb.
     - **NOTICE**: different versions of Pytorch have different memory usages.
 
