@@ -152,9 +152,20 @@ mkdir output
 python3 code/tasks/visualize.py --cfg configs/baselines/vgg16_voc2007.yaml --dataset voc2007test --detections snapshots/midn/<some-running-date-time>/test/model_step24999/detections.pkl --output output 
 ```
 
+## My model
+
+You can download my model by baidu netdisk:
+
+Link: https://pan.baidu.com/s/1pEpmh4AYgPxW5hVBkJ7Kfw  Code: zcn5
+
+Put this folder in your $WSDDN_ROOT, then test and visualize model.
+
+Note `<some-running-date-time>`  is replaced by `final` in this folder, so you should also make changes when you run the code.
+
+
 ---
 
-## Note
+## Notes
 Below is the code structure
 
 - **code**
@@ -172,5 +183,6 @@ Below is the code structure
 
 All code files are in `code` directory. If you want to design a model based on WSDDN, you can modify `layers` and `model`.
 ## References
+
 - [Boosted-OICR](https://github.com/luiszeni/Boosted-OICR)
 - [OICR](https://github.com/ppengtang/oicr)
